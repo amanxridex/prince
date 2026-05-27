@@ -8,63 +8,133 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <canvas id="bg-canvas"></canvas>
 
-    <div class="container">
-        <header>
-            <h1 class="glitch" data-text="Vinay & Prince">Vinay & Prince</h1>
-            <p class="subtitle">Visionary Founders & Tech Innovators</p>
-        </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">V&P<span class="dot">.</span></div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#founders">Founders</a></li>
+            <li><a href="#ventures">Ventures</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <section class="founders-section">
-            <div class="founder-card" data-tilt>
-                <div class="card-inner">
-                    <img src="image1.jpeg" alt="Vinay" class="founder-img">
-                    <h2>Vinay</h2>
-                    <p>Co-Founder & Chief Visionary</p>
-                </div>
-            </div>
-            <div class="founder-card" data-tilt>
-                <div class="card-inner">
-                    <img src="image2.jpeg" alt="Prince" class="founder-img">
-                    <h2>Prince</h2>
-                    <p>Co-Founder & Tech Lead</p>
+    <div class="container">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Vinay & Prince">Vinay & Prince</h1>
+                <p class="subtitle">Visionary Founders & Tech Innovators</p>
+                <div class="hero-btns">
+                    <a href="#ventures" class="btn btn-primary">Explore Ventures</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
         </section>
 
-        <section class="companies-section">
+        <!-- Founders Section -->
+        <section id="founders" class="founders-section">
+            <h2 class="section-title">Meet The Minds</h2>
+            <div class="founders-grid">
+                <div class="founder-card" data-tilt>
+                    <div class="card-inner">
+                        <img src="image1.jpeg" alt="Vinay" class="founder-img">
+                        <h2>Vinay</h2>
+                        <p class="role">Co-Founder & Chief Visionary</p>
+                        <p class="bio">Leading product strategy and design, Vinay transforms complex problems into intuitive, beautiful digital experiences.</p>
+                    </div>
+                </div>
+                <div class="founder-card" data-tilt>
+                    <div class="card-inner">
+                        <img src="image2.jpeg" alt="Prince" class="founder-img">
+                        <h2>Prince</h2>
+                        <p class="role">Co-Founder & Tech Lead</p>
+                        <p class="bio">Architecting robust and scalable systems, Prince ensures our technology stack is always on the cutting edge.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Companies Section -->
+        <section id="ventures" class="companies-section">
             <h2 class="section-title">Our Ventures</h2>
             <div class="companies-grid">
                 <div class="company-card" data-tilt>
                     <div class="card-content">
                         <h3>NexusCore Innovations</h3>
                         <p>Pioneering AI-driven cloud infrastructure and seamless scalable solutions for modern enterprises.</p>
+                        <a href="#" class="learn-more">Visit Site &rarr;</a>
                     </div>
                 </div>
                 <div class="company-card" data-tilt>
                     <div class="card-content">
                         <h3>QuantumSoft Dynamics</h3>
                         <p>Developing next-generation cybersecurity protocols leveraging advanced quantum-resistant algorithms.</p>
+                        <a href="#" class="learn-more">Visit Site &rarr;</a>
                     </div>
                 </div>
                 <div class="company-card" data-tilt>
                     <div class="card-content">
                         <h3>AeroWeb Solutions</h3>
-                        <p>Crafting cutting-edge, immersive Web3 applications and 3D digital experiences.</p>
+                        <p>Crafting cutting-edge, immersive Web3 applications and 3D digital experiences for the new web.</p>
+                        <a href="#" class="learn-more">Visit Site &rarr;</a>
                     </div>
                 </div>
                 <div class="company-card" data-tilt>
                     <div class="card-content">
                         <h3>SynthData Systems</h3>
                         <p>Leading the industry in big data analytics, machine learning, and predictive modeling platforms.</p>
+                        <a href="#" class="learn-more">Visit Site &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Let's Collaborate</h2>
+            <div class="contact-container">
+                <form class="contact-form" data-tilt>
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Vinay & Prince. All rights reserved.</p>
+            <div class="socials">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
