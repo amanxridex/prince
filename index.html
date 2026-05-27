@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinay & Prince | Interactive 3D Portfolio</title>
+    <title>Vinay & Prince | Premium 3D Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -23,7 +25,9 @@
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#founders">Founders</a></li>
+            <li><a href="#expertise">Expertise</a></li>
             <li><a href="#ventures">Ventures</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -35,33 +39,112 @@
         <section id="home" class="hero-section">
             <div class="hero-content">
                 <h1 class="glitch" data-text="Vinay & Prince">Vinay & Prince</h1>
-                <p class="subtitle">Visionary Founders & Tech Innovators</p>
+                <p class="subtitle">Engineering the Future of the Web, AI, & Beyond</p>
                 <div class="hero-btns">
-                    <a href="#ventures" class="btn btn-primary">Explore Ventures</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#about" class="btn btn-primary">Discover Our Story</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>Scroll to explore</p>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">Who We Are</h2>
+            <div class="about-content">
+                <div class="about-text" data-tilt>
+                    <p class="lead">We are a dynamic duo of tech enthusiasts, software engineers, and visionary founders dedicated to pushing the boundaries of what's possible in the digital space.</p>
+                    <p>With a shared passion for disruptive technologies, we came together to bridge the gap between complex engineering and beautiful, user-centric design. From building scalable cloud architectures to designing award-winning user interfaces, our mission is to empower businesses with next-generation tools.</p>
+                    <p>Over the years, we have launched multiple successful ventures, consulted for Fortune 500 companies, and contributed heavily to open-source ecosystems. We don't just write code; we build digital ecosystems.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-box" data-tilt>
+                        <h3>10+</h3>
+                        <p>Years Combined Experience</p>
+                    </div>
+                    <div class="stat-box" data-tilt>
+                        <h3>4</h3>
+                        <p>Successful Ventures</p>
+                    </div>
+                    <div class="stat-box" data-tilt>
+                        <h3>50+</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                    <div class="stat-box" data-tilt>
+                        <h3>1M+</h3>
+                        <p>Lines of Code</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Founders Section -->
         <section id="founders" class="founders-section">
-            <h2 class="section-title">Meet The Minds</h2>
+            <h2 class="section-title">The Masterminds</h2>
             <div class="founders-grid">
                 <div class="founder-card" data-tilt>
                     <div class="card-inner">
-                        <img src="image1.jpeg" alt="Vinay" class="founder-img">
+                        <div class="img-wrapper">
+                            <img src="image1.jpeg" alt="Vinay" class="founder-img">
+                        </div>
                         <h2>Vinay</h2>
-                        <p class="role">Co-Founder & Chief Visionary</p>
-                        <p class="bio">Leading product strategy and design, Vinay transforms complex problems into intuitive, beautiful digital experiences.</p>
+                        <p class="role">Chief Executive & Visionary</p>
+                        <div class="divider"></div>
+                        <p class="bio">Vinay is the strategic mind behind our operations. Specializing in product development, UX/UI architecture, and business scaling, he transforms abstract ideas into tangible, market-leading products.</p>
+                        <ul class="skills-list">
+                            <li>Product Strategy</li>
+                            <li>UX/UI Design</li>
+                            <li>Growth Hacking</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="founder-card" data-tilt>
                     <div class="card-inner">
-                        <img src="image2.jpeg" alt="Prince" class="founder-img">
+                        <div class="img-wrapper">
+                            <img src="image2.jpeg" alt="Prince" class="founder-img">
+                        </div>
                         <h2>Prince</h2>
-                        <p class="role">Co-Founder & Tech Lead</p>
-                        <p class="bio">Architecting robust and scalable systems, Prince ensures our technology stack is always on the cutting edge.</p>
+                        <p class="role">Chief Technology Officer</p>
+                        <div class="divider"></div>
+                        <p class="bio">Prince is a powerhouse of technical execution. He architects robust, high-performance systems and leads the implementation of complex AI and cloud-native solutions that power our ventures.</p>
+                        <ul class="skills-list">
+                            <li>Cloud Architecture</li>
+                            <li>Machine Learning</li>
+                            <li>Full-Stack Engineering</li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Do (Expertise) -->
+        <section id="expertise" class="expertise-section">
+            <h2 class="section-title">What We Do</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card" data-tilt>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Full-Stack Engineering</h3>
+                    <p>We build scalable, secure, and blazing-fast web applications using the latest JavaScript frameworks and robust backend technologies.</p>
+                </div>
+                <div class="expertise-card" data-tilt>
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Integrating intelligent systems, predictive models, and natural language processing into everyday applications to drive automation.</p>
+                </div>
+                <div class="expertise-card" data-tilt>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h3>Cloud Architecture</h3>
+                    <p>Designing highly available, distributed systems on AWS, GCP, and Azure to ensure our products can scale infinitely without downtime.</p>
+                </div>
+                <div class="expertise-card" data-tilt>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Implementing zero-trust architectures, end-to-end encryption, and rigorous vulnerability testing to keep user data absolutely safe.</p>
                 </div>
             </div>
         </section>
@@ -69,33 +152,38 @@
         <!-- Companies Section -->
         <section id="ventures" class="companies-section">
             <h2 class="section-title">Our Ventures</h2>
+            <p class="section-desc">We don't just consult; we build our own world-class products. Here are some of the companies we've founded.</p>
             <div class="companies-grid">
                 <div class="company-card" data-tilt>
                     <div class="card-content">
+                        <div class="company-icon"><i class="fa-solid fa-network-wired"></i></div>
                         <h3>NexusCore Innovations</h3>
-                        <p>Pioneering AI-driven cloud infrastructure and seamless scalable solutions for modern enterprises.</p>
-                        <a href="#" class="learn-more">Visit Site &rarr;</a>
+                        <p>Pioneering AI-driven cloud infrastructure and seamless scalable solutions for modern enterprises seeking digital transformation.</p>
+                        <a href="#" class="learn-more">Explore NexusCore &rarr;</a>
                     </div>
                 </div>
                 <div class="company-card" data-tilt>
                     <div class="card-content">
+                        <div class="company-icon"><i class="fa-solid fa-lock"></i></div>
                         <h3>QuantumSoft Dynamics</h3>
-                        <p>Developing next-generation cybersecurity protocols leveraging advanced quantum-resistant algorithms.</p>
-                        <a href="#" class="learn-more">Visit Site &rarr;</a>
+                        <p>Developing next-generation cybersecurity protocols leveraging advanced quantum-resistant algorithms for the financial sector.</p>
+                        <a href="#" class="learn-more">Explore QuantumSoft &rarr;</a>
                     </div>
                 </div>
                 <div class="company-card" data-tilt>
                     <div class="card-content">
+                        <div class="company-icon"><i class="fa-brands fa-space-awesome"></i></div>
                         <h3>AeroWeb Solutions</h3>
-                        <p>Crafting cutting-edge, immersive Web3 applications and 3D digital experiences for the new web.</p>
-                        <a href="#" class="learn-more">Visit Site &rarr;</a>
+                        <p>Crafting cutting-edge, immersive Web3 applications, spatial computing interfaces, and interactive 3D digital experiences.</p>
+                        <a href="#" class="learn-more">Explore AeroWeb &rarr;</a>
                     </div>
                 </div>
                 <div class="company-card" data-tilt>
                     <div class="card-content">
+                        <div class="company-icon"><i class="fa-solid fa-chart-pie"></i></div>
                         <h3>SynthData Systems</h3>
-                        <p>Leading the industry in big data analytics, machine learning, and predictive modeling platforms.</p>
-                        <a href="#" class="learn-more">Visit Site &rarr;</a>
+                        <p>Leading the industry in big data analytics, real-time telemetry processing, and predictive modeling platforms.</p>
+                        <a href="#" class="learn-more">Explore SynthData &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -103,7 +191,8 @@
 
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
-            <h2 class="section-title">Let's Collaborate</h2>
+            <h2 class="section-title">Start A Conversation</h2>
+            <p class="section-desc">Have a groundbreaking idea or need technical leadership? Let's build the future together.</p>
             <div class="contact-container">
                 <form class="contact-form" data-tilt>
                     <div class="input-group">
@@ -116,9 +205,9 @@
                     </div>
                     <div class="input-group">
                         <textarea id="message" rows="4" required placeholder=" "></textarea>
-                        <label for="message">Message</label>
+                        <label for="message">How can we help you?</label>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
                 </form>
             </div>
         </section>
@@ -127,11 +216,18 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2026 Vinay & Prince. All rights reserved.</p>
+            <div class="footer-brand">
+                <h3>V&P<span>.</span></h3>
+                <p>Engineering the Future</p>
+            </div>
+            <div class="footer-links">
+                <p>&copy; 2026 Vinay & Prince. All rights reserved.</p>
+            </div>
             <div class="socials">
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
             </div>
         </div>
     </footer>
