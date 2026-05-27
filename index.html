@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay & Prince | Interactive 3D Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="Vinay & Prince">Vinay & Prince</h1>
+            <p class="subtitle">Visionary Founders & Tech Innovators</p>
+        </header>
+
+        <section class="founders-section">
+            <div class="founder-card" data-tilt>
+                <div class="card-inner">
+                    <img src="image1.jpeg" alt="Vinay" class="founder-img">
+                    <h2>Vinay</h2>
+                    <p>Co-Founder & Chief Visionary</p>
+                </div>
+            </div>
+            <div class="founder-card" data-tilt>
+                <div class="card-inner">
+                    <img src="image2.jpeg" alt="Prince" class="founder-img">
+                    <h2>Prince</h2>
+                    <p>Co-Founder & Tech Lead</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="companies-section">
+            <h2 class="section-title">Our Ventures</h2>
+            <div class="companies-grid">
+                <div class="company-card" data-tilt>
+                    <div class="card-content">
+                        <h3>NexusCore Innovations</h3>
+                        <p>Pioneering AI-driven cloud infrastructure and seamless scalable solutions for modern enterprises.</p>
+                    </div>
+                </div>
+                <div class="company-card" data-tilt>
+                    <div class="card-content">
+                        <h3>QuantumSoft Dynamics</h3>
+                        <p>Developing next-generation cybersecurity protocols leveraging advanced quantum-resistant algorithms.</p>
+                    </div>
+                </div>
+                <div class="company-card" data-tilt>
+                    <div class="card-content">
+                        <h3>AeroWeb Solutions</h3>
+                        <p>Crafting cutting-edge, immersive Web3 applications and 3D digital experiences.</p>
+                    </div>
+                </div>
+                <div class="company-card" data-tilt>
+                    <div class="card-content">
+                        <h3>SynthData Systems</h3>
+                        <p>Leading the industry in big data analytics, machine learning, and predictive modeling platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
